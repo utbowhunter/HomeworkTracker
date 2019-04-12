@@ -1,0 +1,10 @@
+{ "Assignments" : 
+	[
+		{"Name": "Assignment 2", "ClassName": "Computer Science", "AssignedDate": "4/1/2019", "DueDate": "4/28/2019", "Complete": "false"},
+		{"Name": "Assignment 3", "ClassName": "Computer Science", "AssignedDate": "4/1/2019", "DueDate": "4/10/2019", "Complete": "false"},
+		{"Name": "Assignment 4", "ClassName": "Math", "AssignedDate": "4/13/2019", "DueDate": "4/18/2019", "Complete": "true"},		
+		{"Name": "Assignment 1", "ClassName": "Biology", "AssignedDate": "3/17/2019", "DueDate": "4/15/2019", "Complete": "true"}
+	]
+}
+
+
