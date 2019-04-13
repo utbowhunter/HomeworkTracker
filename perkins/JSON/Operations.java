@@ -9,7 +9,7 @@ import java.io.FileReader;
 
 public class Operations
 {
-    public static JSONArray ReadJsonFromFile(String file) throws Exception
+    public static JSONArray ReadJsonFromFile(String file, String Heading) throws Exception
     {
         JSONParser jsonParser = new JSONParser();
         JSONArray jsonArray = new JSONArray();
@@ -25,7 +25,7 @@ public class Operations
                 // convert Object to JSONObject    
                 JSONObject jsonObject = (JSONObject)object;
 
-                jsonArray = (JSONArray)jsonObject.get("Assignments");
+                jsonArray = (JSONArray)jsonObject.get(Heading);
 
         
         } 
@@ -41,6 +41,8 @@ public class Operations
     }
     public static boolean SaveJsonToFile(String Json)
     {
+
+
         return true;
     }
 

@@ -1,0 +1,11 @@
+{    "Settings": 
+    [
+        {
+            "name": "Alex Perkins", 
+            "email": "alperkie17@gmail.com", 
+            "textaddress": "801230590@txt.att.com", 
+            "notificationmethod": "email", 
+            "datafile": "data/homework.json" 
+        }
+    ]
+}
