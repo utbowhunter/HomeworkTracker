@@ -20,13 +20,14 @@ class HomeworkTracker {
 
           //start ui configuation
 
-           /* for (Assignment var : Assignments.List) {
+            for (Assignment var : Assignments.List) {
                 
                // System.out.println("Name: " + var.Name);
                 //System.out.println("Class Name: " + var.ClassName);
                 //System.out.println("Due Date: " + var.DueDate);
             }
-            */
+            
+        
 
 
             //Boolean retVal = Assignments.WriteToJSONFile(Assignments.List);
