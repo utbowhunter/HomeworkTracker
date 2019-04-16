@@ -11,21 +11,22 @@ import org.json.simple.JSONArray;
 class HomeworkTracker {
     public static void main(String[] args) {
         
-        JSONArray jsonArray = new JSONArray();
+        //JSONArray jsonArray = new JSONArray();
         try 
         {
            LoadSettings();
 
            LoadData();
 
-          
+          //start ui configuation
 
-            for (Assignment var : Assignments.List) {
+           /* for (Assignment var : Assignments.List) {
                 
-                System.out.println("Name: " + var.Name);
-                System.out.println("Class Name: " + var.ClassName);
-                System.out.println("Due Date: " + var.DueDate);
+               // System.out.println("Name: " + var.Name);
+                //System.out.println("Class Name: " + var.ClassName);
+                //System.out.println("Due Date: " + var.DueDate);
             }
+            */
 
 
             //Boolean retVal = Assignments.WriteToJSONFile(Assignments.List);
