@@ -14,15 +14,11 @@ class HomeworkTracker {
         JSONArray jsonArray = new JSONArray();
         try 
         {
-            // ***** Retireve the settings from the settings file 
-            String settingsFile = "data/settings.json";
-            Settings.LoadSettingsFromJSONFile(settingsFile);
+           LoadSettings();
 
-            // ***** Retrieve the data file location from the settings collections          
-            String file = Settings.RetrieveSettingValueByKey("datafile"); //"data/homework.json";
+           LoadData();
 
-            // ***** Load the data into the Data Model
-            Assignments.LoadAssignmentListFromJSON(file);
+          
 
             for (Assignment var : Assignments.List) {
                 
@@ -40,5 +36,19 @@ class HomeworkTracker {
         }
         
        
+    }
+    private static void LoadData()
+    {
+  // ***** Retrieve the data file location from the settings collections          
+  String file = Settings.RetrieveSettingValueByKey("datafile"); //"data/homework.json";
+
+  // ***** Load the data into the Data Model
+  Assignments.LoadAssignmentListFromJSON(file);
+    }
+    private static void LoadSettings(){
+
+        // ***** Retireve the settings from the settings file 
+        String settingsFile = "data/settings.json";
+        Settings.LoadSettingsFromJSONFile(settingsFile);
     }
 }
