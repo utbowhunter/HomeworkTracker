@@ -20,14 +20,15 @@
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="198.0" layoutX="20.0" layoutY="35.0" stroke="BLACK" strokeType="INSIDE" width="401.0" />
       <MenuBar layoutX="-6.0" layoutY="2.0" prefHeight="25.0" prefWidth="855.0">
         <menus>
-          <Menu mnemonicParsing="false" text="File">
+          <Menu id="mnuFile" mnemonicParsing="false" text="File">
             <items>
-              <MenuItem mnemonicParsing="false" text="Close" />
+              <MenuItem id="mnuPreferences" mnemonicParsing="false" text="Preferences ..." />
+                  <MenuItem id="mnuClose" mnemonicParsing="false" text="Close" />
             </items>
           </Menu>
-          <Menu mnemonicParsing="false" text="Help">
+          <Menu id="mnuHelp" mnemonicParsing="false" text="Help">
             <items>
-              <MenuItem mnemonicParsing="false" text="About" />
+              <MenuItem id="mnuAbout" mnemonicParsing="false" text=" About ..." />
             </items>
           </Menu>
         </menus>
