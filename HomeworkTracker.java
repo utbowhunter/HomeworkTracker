@@ -26,7 +26,8 @@ import org.json.simple.JSONArray;
 
 public class HomeworkTracker  extends Application {
     public static void main(String[] args) {
-        
+    
+
         try 
         {
            LoadSettings();
