@@ -61,7 +61,23 @@ public class HomeworkTrackerController implements Initializable {
 //
     }
 
-   
+   public void handleDeleteButtonClick(ActionEvent event)
+   {
+       Assignment assignment= new Assignment();
+
+       assignment.Name = textBoxAssignmentName.getText();
+       assignment.ClassName = textBoxCourseName.getText();
+       assignment.AssignedDate = datetimeAssignDate.getPromptText();
+       assignment.DueDate = datetimeDueDate.getPromptText();
+
+       if(checkboxCompleted.isSelected())
+       {
+           assignment.Completed = true;
+        }
+
+        Assignments.List.remove(assignment);
+    
+   }
     
 
 }
